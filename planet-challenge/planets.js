@@ -1,16 +1,16 @@
 "use strict";
 exports.__esModule = true;
-var Planet = /** @class */ (function () {
-    function Planet(width, color) {
+var planet = /** @class */ (function () {
+    function planet(width, color) {
         this.width = width;
         this.color = color;
     }
-    return Planet;
+    return planet;
 }());
-exports.Planet = Planet;
-var krypton = new Planet(200, 'blue');
+exports.planet = planet;
+var krypton = new planet(200, 'blue');
 exports.krypton = krypton;
-var omicronPersei8 = new Planet(300, 'red');
+var omicronPersei8 = new planet(300, 'red');
 exports.omicronPersei8 = omicronPersei8;
-var nemesis = new Planet(100, 'yellow');
+var nemesis = new planet(100, 'yellow');
 exports.nemesis = nemesis;

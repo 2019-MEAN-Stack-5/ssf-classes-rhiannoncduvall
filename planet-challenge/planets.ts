@@ -1,4 +1,4 @@
-export class Planet {
+export class planet {
     width: number;
     color: string;
 
@@ -8,8 +8,10 @@ export class Planet {
     }
 }
 
-let krypton = new Planet(200, 'blue');
-let omicronPersei8 = new Planet(300, 'red');
-let nemesis = new Planet(100, 'yellow');
+let krypton = new planet(200, 'blue');
+let omicronPersei8 = new planet(300, 'red');
+let nemesis = new planet(100, 'yellow');
 
-export { krypton, omicronPersei8, nemesis };
+export { krypton };
+export { omicronPersei8 };
+export { nemesis };
