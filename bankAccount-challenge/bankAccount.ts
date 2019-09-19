@@ -3,10 +3,9 @@ export class bankAccount {
     balance: number;
     transactions: Array<number> = [];
 
-    constructor(owner: string, balance: number, transactions: Array<number>) {
+    constructor(owner: string, balance: number) {
         this.owner = owner;
         this.balance = balance;
-        this.transactions = transactions;
     }
 
     getBalance() {
@@ -15,17 +14,13 @@ export class bankAccount {
 
     withdrawal(withdrawalAmt: number) {
         this.balance -= withdrawalAmt;
+        this.transactions.push(withdrawalAmt);
         return withdrawalAmt;
     }
 
     deposit(depositAmt: number) {
         this.balance += depositAmt;
+        this.transactions.push(depositAmt);
         return depositAmt;
     }
 }
-
-let harry = new bankAccount('Harry Potter', 1000, [2,3]);
-
-export { harry };
-
-console.log(harry.transactions);
